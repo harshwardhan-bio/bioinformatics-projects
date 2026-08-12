@@ -27,20 +27,21 @@ reverse complement — this project reproduces that same logic.
 
 ```bash
 python analyzer.py
-Enter a DNA sequence: ATGC
 ```
 
 ## Example output
 
-```
-Count of Adenine (A): 1
-Count of Thymine (T): 1
-Count of Cytosine (C): 1
-Count of Guanine (G): 1
-AT content: 50.00%
-Moderate GC content: 50.00%
-Complementary DNA sequence: TACG
-Reverse complementary DNA sequence: GCAT
+```text
+=== DNA Sequence Analysis Report ===
+DNA Sequence        : ATGCATGCATGC
+Sequence Length     : 12 bp
+Base Counts         : A: 3, T: 3, C: 3, G: 3
+GC Content          : 50.00%
+AT Content          : 50.00%
+GC Category         : Moderate GC content
+Complement          : TACGTACGTACG
+Reverse Complement : GCATGCATGCAT
+====================================
 ```
 
 ## Error handling
@@ -48,7 +49,7 @@ Reverse complementary DNA sequence: GCAT
 Invalid bases are caught before any calculation runs, and the exact
 offending character is named:
 
-```
+```text
 Enter a DNA sequence: ATGCX
 Error: Invalid base 'X' found in the DNA sequence. Please enter a
 valid DNA sequence containing only A, T, G, and C.
@@ -70,7 +71,7 @@ on longer sequences was a good habit for catching logic errors early.
 ## Run it yourself
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/bioinformatics-projects
+git clone https://github.com/harshwardhan-bio/bioinformatics-projects
 cd bioinformatics-projects/dna-sequence-analyzer
 python analyzer.py
 ```

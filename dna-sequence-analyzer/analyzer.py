@@ -48,9 +48,4 @@ def dna_sequence_analyzer(dna_sequence):
             return f"Error: {e} Please enter a valid DNA sequence containing only A, T, G, and C."
 
 
-if __name__ == "__main__":
-    user_seq = input("Enter a DNA sequence: ").strip()
-    if user_seq:
-        print(dna_sequence_analyzer(user_seq))
-    else:
-        print(dna_sequence_analyzer("ATGCATGCATGC"))
+print(dna_sequence_analyzer("ATGCATGCATGC"))

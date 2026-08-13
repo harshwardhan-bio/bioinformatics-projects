@@ -57,8 +57,14 @@ class BioSequence:
         plt.show()
 
 if __name__ == "__main__":
-    # Sample execution when running biosequence.py directly
-    sample = BioSequence("AGCTAATTGGCA", name="Test Gene 1")
-    sample.summary()
-    sample.plot_distribution()
-    sample.plot_gc_at_ratio()
+    user_sequence = input("Enter a DNA sequence: ").strip()
+    user_name = input("Enter sequence name (optional): ").strip()
+
+    if not user_name:
+        user_name = "User Sequence"
+
+    if user_sequence:
+        sample = BioSequence(user_sequence, name=user_name)
+        sample.summary()
+        sample.plot_distribution()
+        sample.plot_gc_at_ratio()

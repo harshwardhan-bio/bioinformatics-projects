@@ -16,6 +16,7 @@ BioPython, and data analysis one project at a time.
 |---|---|---|
 | [GC Content Analyzer](./gc-content-analyzer) | Validates a DNA sequence and calculates/classifies its GC content | ✅ Complete |
 | [DNA Sequence Analyzer](./dna-sequence-analyzer) | Nucleotide composition, GC/AT content, complementary strand, reverse complement | ✅ Complete |
+| [BioSequence Visualizer](./biosequence-visualizer) | Object-Oriented DNA analyzer with Matplotlib nucleotide distribution & GC/AT ratio charts | ✅ Complete |
 | Gene Expression Visualizer | Visualizing gene expression data from NCBI datasets using Pandas and Matplotlib | 🚧 Planned |
 | COVID Genome Analyzer | Parsing and analyzing SARS-CoV-2 genome data with BioPython | 🚧 Planned |
 
@@ -26,6 +27,7 @@ example usage, and sample output.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![BioPython](https://img.shields.io/badge/BioPython-3776AB?style=flat&logo=python&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 
 ## 🎯 Why this repo exists
@@ -35,8 +37,8 @@ rather than scattered across separate repos. As I build more projects
 through my coding roadmap, they'll be added here.
 
 For my general Python practice exercises (not full projects), see my
-[python-practice](https://github.com/YOUR_USERNAME/python-practice) repo.
+[python-practice](https://github.com/harshwardhan-bio/python-practice) repo.
 
 ## 🔗 Connect
 
-[LinkedIn](YOUR_LINKEDIN_URL) | [GitHub Profile](YOUR_GITHUB_URL)
+[GitHub Profile](https://github.com/harshwardhan-bio)

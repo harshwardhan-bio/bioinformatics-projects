@@ -57,14 +57,8 @@ class BioSequence:
         plt.show()
 
 if __name__ == "__main__":
-    # Create a BioSequence object
+    # Sample execution when running biosequence.py directly
     sample = BioSequence("AGCTAATTGGCA", name="Test Gene 1")
-
-    # Display summary text report
     sample.summary()
-
-    # Plot nucleotide frequency distribution bar chart
     sample.plot_distribution()
-
-    # Plot GC vs AT composition pie chart
     sample.plot_gc_at_ratio()

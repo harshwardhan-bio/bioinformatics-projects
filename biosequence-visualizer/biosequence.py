@@ -57,9 +57,14 @@ class BioSequence:
         plt.show()
 
 if __name__ == "__main__":
-    seq_input = input("Enter DNA sequence: ").strip()
-    if seq_input:
-        dna = BioSequence(seq_input)
-        dna.summary()
-        dna.plot_distribution()
-        dna.plot_gc_at_ratio()
+    # Create a BioSequence object
+    sample = BioSequence("AGCTAATTGGCA", name="Test Gene 1")
+
+    # Display summary text report
+    sample.summary()
+
+    # Plot nucleotide frequency distribution bar chart
+    sample.plot_distribution()
+
+    # Plot GC vs AT composition pie chart
+    sample.plot_gc_at_ratio()

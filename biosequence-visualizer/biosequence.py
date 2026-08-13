@@ -57,32 +57,9 @@ class BioSequence:
         plt.show()
 
 if __name__ == "__main__":
-    user_seq = input("Enter a DNA sequence: ").strip()
-    user_name = input("Enter sequence name (optional): ").strip()
-    if not user_name:
-        user_name = "User Sequence"
-
-    if user_seq:
-        sample = BioSequence(user_seq, name=user_name)
-
-        print("\nSelect what you would like to view:")
-        print("1. Text Summary Report")
-        print("2. Nucleotide Distribution (Bar Chart)")
-        print("3. GC / AT Ratio (Pie Chart)")
-        print("4. All (Summary + Both Charts)")
-        
-        choice = input("Enter choice (1-4): ").strip()
-        
-        if choice == "1":
-            sample.summary()
-        elif choice == "2":
-            sample.plot_distribution()
-        elif choice == "3":
-            sample.plot_gc_at_ratio()
-        elif choice == "4":
-            sample.summary()
-            sample.plot_distribution()
-            sample.plot_gc_at_ratio()
-        else:
-            print("Invalid choice. Displaying summary report by default:\n")
-            sample.summary()
+    seq_input = input("Enter DNA sequence: ").strip()
+    if seq_input:
+        dna = BioSequence(seq_input)
+        dna.summary()
+        dna.plot_distribution()
+        dna.plot_gc_at_ratio()

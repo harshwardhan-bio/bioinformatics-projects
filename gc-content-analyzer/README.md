@@ -49,16 +49,10 @@ Python — using a `set` for fast base validation, and `try/except` with
 a custom error message instead of letting bad input crash the program
 or silently produce wrong results.
 
-## What's next
-
-This will grow into a fuller DNA Sequence Analyzer — adding full
-nucleotide composition, complementary strand generation, and reverse
-complement — once those features are built.
-
 ## Run it yourself
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/bioinformatics-projects
+git clone https://github.com/harshwardhan-bio/bioinformatics-projects
 cd bioinformatics-projects/gc-content-analyzer
 python gc_analyzer.py
 ```
